@@ -2,364 +2,477 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eliud RM — Automation &amp; Full-Stack Developer</title>
-<meta name="description" content="I build automation, web and mobile systems that give businesses back the hours they lose to manual work. Excel/VBA, Python, Vue, Flutter.">
-<meta property="og:title" content="Eliud RM — Automation &amp; Full-Stack Developer">
-<meta property="og:description" content="ERP platforms, business automation and shipped mobile apps. Live demos you can click.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eliud RM — Business Systems, Automation &amp; Apps</title>
+<meta name="description" content="I build the systems businesses run on: ERPs, automation and mobile apps. Three management platforms in production and an app live on Google Play.">
+<meta name="author" content="Eliud RM">
 <meta property="og:type" content="website">
+<meta property="og:title" content="Eliud RM — Business Systems, Automation &amp; Apps">
+<meta property="og:description" content="Three management platforms in production, an app on Google Play, eight live demos you can click.">
+<meta property="og:image" content="assets/gaston/dashboard.webp">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/timetracker/icon.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#ffffff; --bg-soft:#f6f7f9; --bg-card:#ffffff;
-  --fg:#0f1520; --fg-muted:#5a6473; --fg-faint:#8b94a3;
-  --border:#e3e7ec; --accent:#1f6feb; --accent-soft:#e8f0fe;
-  --good:#0f9d58; --good-soft:#e6f4ea;
-  --shadow:0 1px 2px rgba(16,24,40,.05),0 8px 24px -12px rgba(16,24,40,.18);
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#0c1016; --bg-soft:#11161f; --bg-card:#141a24;
-    --fg:#e9edf3; --fg-muted:#9aa5b4; --fg-faint:#6d7889;
-    --border:#222b38; --accent:#4d90f0; --accent-soft:#16233a;
-    --good:#4ade80; --good-soft:#13291d;
-    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.7);
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#0c1016; --bg-soft:#11161f; --bg-card:#141a24;
-  --fg:#e9edf3; --fg-muted:#9aa5b4; --fg-faint:#6d7889;
-  --border:#222b38; --accent:#4d90f0; --accent-soft:#16233a;
-  --good:#4ade80; --good-soft:#13291d;
-  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.7);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  background:var(--bg); color:var(--fg);
-  font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
-  line-height:1.6; -webkit-font-smoothing:antialiased;
-}
-.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-
-/* header */
-header{border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
-.hdr{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
-.brand{font-weight:800;letter-spacing:-.02em;font-size:1.05rem}
-.brand span{color:var(--fg-faint);font-weight:500}
-nav{display:flex;gap:20px;font-size:.9rem;font-weight:500}
-nav a{color:var(--fg-muted)}
-nav a:hover{color:var(--fg);text-decoration:none}
-@media(max-width:700px){nav{display:none}}
-
-/* hero */
-.hero{padding:72px 0 56px;border-bottom:1px solid var(--border)}
-.badge{display:inline-flex;align-items:center;gap:7px;background:var(--good-soft);color:var(--good);
-  font-size:.78rem;font-weight:600;padding:5px 11px;border-radius:999px;margin-bottom:22px}
-.dot{width:6px;height:6px;border-radius:50%;background:currentColor}
-h1{font-size:clamp(2rem,5.2vw,3.25rem);line-height:1.1;letter-spacing:-.035em;font-weight:800;max-width:19ch}
-.lede{margin-top:20px;font-size:clamp(1.02rem,2vw,1.2rem);color:var(--fg-muted);max-width:60ch}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.94rem;
-  padding:11px 20px;border-radius:9px;border:1px solid transparent;transition:.15s}
-.btn:hover{text-decoration:none;transform:translateY(-1px)}
-.btn-primary{background:var(--accent);color:#fff}
-.btn-ghost{background:var(--bg-card);color:var(--fg);border-color:var(--border);box-shadow:var(--shadow)}
-.stats{display:flex;flex-wrap:wrap;gap:34px;margin-top:44px}
-.stat b{display:block;font-size:1.6rem;font-weight:800;letter-spacing:-.02em}
-.stat span{font-size:.82rem;color:var(--fg-faint);font-weight:500}
-
-/* sections */
-section{padding:60px 0}
-.sec-head{margin-bottom:28px}
-h2{font-size:1.55rem;font-weight:700;letter-spacing:-.02em}
-.sec-head p{color:var(--fg-muted);margin-top:6px;font-size:.96rem}
-
-/* featured */
-.feat{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
-.fcard{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:26px;box-shadow:var(--shadow);
-  display:flex;flex-direction:column}
-.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--accent);background:var(--accent-soft);padding:4px 9px;border-radius:6px;margin-bottom:14px;align-self:flex-start}
-.tag.live{color:var(--good);background:var(--good-soft)}
-.fcard h3{font-size:1.2rem;font-weight:700;letter-spacing:-.015em;margin-bottom:9px}
-.fcard p{color:var(--fg-muted);font-size:.93rem;flex:1}
-.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(88px,1fr));gap:14px;margin:20px 0 4px;
-  padding-top:18px;border-top:1px solid var(--border)}
-.metrics div b{display:block;font-size:1.22rem;font-weight:800;letter-spacing:-.02em}
-.metrics div span{font-size:.75rem;color:var(--fg-faint)}
-.stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
-.chip{font-size:.75rem;font-weight:500;color:var(--fg-muted);background:var(--bg-soft);
-  border:1px solid var(--border);padding:3px 9px;border-radius:6px}
-.flink{margin-top:20px;font-weight:600;font-size:.9rem}
-
-/* grid */
-.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
-.card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:20px;
-  display:flex;flex-direction:column;transition:.18s}
-.card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--accent)}
-.card h3{font-size:1rem;font-weight:660;margin-bottom:7px;letter-spacing:-.01em}
-.card p{font-size:.875rem;color:var(--fg-muted);flex:1}
-.card .impact{margin-top:12px;font-size:.8rem;font-weight:600;color:var(--good)}
-.card .stack{margin-top:14px}
-
-/* mobile apps */
-.shots{display:flex;gap:14px;overflow-x:auto;padding:4px 0 12px;scroll-snap-type:x mandatory}
-.shots img{height:360px;width:auto;border-radius:12px;border:1px solid var(--border);
-  box-shadow:var(--shadow);scroll-snap-align:start;flex:none}
-.appbar{display:flex;align-items:center;gap:14px;margin-bottom:16px}
-.appbar img{width:52px;height:52px;border-radius:12px;border:1px solid var(--border)}
-.appbar h3{font-size:1.1rem;font-weight:700}
-.appbar span{font-size:.85rem;color:var(--fg-muted)}
-.note{background:var(--bg-soft);border:1px solid var(--border);border-left:3px solid var(--fg-faint);
-  border-radius:8px;padding:13px 16px;font-size:.87rem;color:var(--fg-muted);margin-top:18px}
-
-/* certs */
-.certs{display:flex;flex-wrap:wrap;gap:10px}
-.cert{background:var(--bg-card);border:1px solid var(--border);border-radius:9px;
-  padding:11px 15px;font-size:.87rem;font-weight:500}
-
-/* footer */
-footer{border-top:1px solid var(--border);padding:44px 0;background:var(--bg-soft)}
-.foot{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
-.foot p{font-size:.86rem;color:var(--fg-faint)}
-.flinks{display:flex;gap:18px;font-size:.9rem;font-weight:500}
-.alt{background:var(--bg-soft)}
-</style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<header>
-  <div class="wrap hdr">
-    <div class="brand">Eliud RM <span>· Automation &amp; Full-Stack</span></div>
-    <nav>
-      <a href="#work">Featured</a>
-      <a href="#demos">Live demos</a>
+<div id="progress"></div>
+
+<header id="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top">
+      <span class="logo-mark"><span>E</span></span>
+      <span>Eliud RM<small>Business systems &amp; automation</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#more">More</a>
       <a href="#mobile">Mobile</a>
       <a href="#certs">Certifications</a>
+      <a class="nav-cta" href="https://www.upwork.com/freelancers/~01471ca462b236e8e5" target="_blank" rel="noopener">Hire me</a>
     </nav>
   </div>
 </header>
 
-<div class="wrap">
-  <div class="hero">
-    <div class="badge"><span class="dot"></span> Available for new projects</div>
-    <h1>I automate the work that eats your team's week.</h1>
-    <p class="lede">
-      Business systems, process automation and mobile apps — built end to end.
-      Most of my projects start with a team copying data between spreadsheets or tracking
-      operations in a notebook. I replace that with software that does it in one click.
-      Everything below is live and clickable.
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="aurora"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+  <div class="grid-bg"></div>
+  <div class="wrap">
+    <span class="pill rv"><i class="pulse"></i> Available for new projects · Lima, Peru (UTC−5)</span>
+    <h1 class="rv">I build the systems<br>a business <span class="grad">actually runs on.</span></h1>
+    <p class="lede rv">
+      Not landing pages. ERPs, point-of-sale, inventory with expiry control, process automation
+      and mobile apps — the software that replaces the spreadsheet a team is drowning in.
+      Three management platforms in production, one app live on Google Play, and every demo below is clickable.
     </p>
-    <div class="cta">
-      <a class="btn btn-primary" href="https://www.upwork.com/freelancers/~01471ca462b236e8e5">Hire me on Upwork →</a>
-      <a class="btn btn-ghost" href="https://github.com/Enybyy">GitHub</a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/eliud-rojas-mendoza-414652212/">LinkedIn</a>
+    <div class="hero-cta rv">
+      <a class="btn btn-1" href="#work">See the work <span aria-hidden="true">↓</span></a>
+      <a class="btn btn-2" href="https://www.upwork.com/freelancers/~01471ca462b236e8e5" target="_blank" rel="noopener">Hire me on Upwork</a>
+      <a class="btn btn-2" href="https://github.com/Enybyy" target="_blank" rel="noopener">GitHub</a>
     </div>
-    <div class="stats">
-      <div class="stat"><b>76</b><span>tables in production ERP</span></div>
-      <div class="stat"><b>25</b><span>Play Store releases shipped</span></div>
-      <div class="stat"><b>8</b><span>live, clickable demos</span></div>
-      <div class="stat"><b>7</b><span>professional certifications</span></div>
+
+    <div class="stats rv">
+      <div><b data-count="3">0</b><span>PLATFORMS IN PRODUCTION</span></div>
+      <div><b data-count="76">0</b><span>TABLES IN LARGEST ERP</span></div>
+      <div><b data-count="25">0</b><span>PLAY STORE RELEASES</span></div>
+      <div><b data-count="8">0</b><span>LIVE CLICKABLE DEMOS</span></div>
     </div>
   </div>
-</div>
 
-<section id="work">
+  <div class="marquee rv">
+    <div class="mq-track" id="mq"></div>
+  </div>
+</section>
+
+<!-- ============ CASE STUDIES ============ -->
+<section id="work" class="sec-pad">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>Featured work</h2>
-      <p>Two systems running in production today.</p>
-    </div>
-    <div class="feat">
+    <span class="eyebrow rv">Selected work</span>
+    <h2 class="rv">Four systems, built end to end.</h2>
+    <p class="sec-sub rv">
+      Each one solved a business that was running on spreadsheets and notebooks.
+      Screenshots are the real software, running on real operational data.
+    </p>
+  </div>
 
-      <article class="fcard">
-        <span class="tag live">● In production</span>
+  <!-- ---- 01 Gaston's Sweets ---- -->
+  <article class="case wrap">
+    <div class="case-head rv">
+      <div class="case-no">01</div>
+      <div>
+        <div class="tags">
+          <span class="tag live">● In production</span>
+          <span class="tag">Laravel 13</span><span class="tag">React 19</span><span class="tag">FEFO inventory</span>
+        </div>
+        <h3>Gastón's Sweets — Commercial Management System</h3>
+        <p class="hook">
+          A confectionery business selling perishable stock had no way to know what was about to expire,
+          which credit was overdue, or whether the day actually closed in profit. It ran on spreadsheets.
+        </p>
+      </div>
+    </div>
+
+    <div class="psr rv">
+      <div><h4>The problem</h4><p>Sales, credit, purchasing and perishable stock tracked separately. No expiry control, no traceability, and cash closing done by hand every night.</p></div>
+      <div><h4>What I built</h4><p>A full management platform: sales with credit and payments, purchasing, FEFO inventory with lot and expiry tracking, daily cash, finance, ABC analytics, alerts and reporting.</p></div>
+      <div><h4>The result</h4><p>One auditable system covering purchase-to-cash. The dashboard scores operational health and points to exactly where money is trapped.</p></div>
+    </div>
+
+    <div class="kpis rv">
+      <div class="kpi"><b data-count="1603" data-suffix="">0</b><span>SALES IN THE DEMO DATASET</span></div>
+      <div class="kpi"><b data-count="57">0</b><span>SKUs UNDER FEFO CONTROL</span></div>
+      <div class="kpi"><b data-count="16">0</b><span>OPERATIONAL MODULES</span></div>
+      <div class="kpi"><b>28.9%</b><span>GROSS MARGIN TRACKED</span></div>
+    </div>
+
+    <figure class="frame rv" style="margin:0">
+      <div class="frame-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="frame-url">gastonssweets.zentrixkg.com — Executive dashboard</span></div>
+      <img src="assets/gaston/dashboard.webp" alt="Gastón's Sweets executive dashboard with sales, margin, inventory value and business health index" loading="lazy" data-lb="Executive dashboard — sales, gross margin, immobilised capital and a composite operational health index">
+    </figure>
+
+    <div class="thumbs rv">
+      <figure class="thumb"><img src="assets/gaston/analitica.webp" alt="ABC analysis and Pareto concentration curve" loading="lazy" data-lb="Analytics — ABC classification, Pareto concentration curve, GMROI and stock rotation"><figcaption>ABC analysis &amp; Pareto</figcaption></figure>
+      <figure class="thumb"><img src="assets/gaston/lotes-vencimientos.webp" alt="Lot and expiry tracking screen" loading="lazy" data-lb="Lots &amp; expiry — FEFO control, capital at risk and days-to-expiry per batch"><figcaption>Lots &amp; expiry (FEFO)</figcaption></figure>
+      <figure class="thumb"><img src="assets/gaston/finanzas.webp" alt="Finance module" loading="lazy" data-lb="Finance — P&amp;L view, expense structure and net result"><figcaption>Finance</figcaption></figure>
+      <figure class="thumb"><img src="assets/gaston/reportes.webp" alt="Reports module" loading="lazy" data-lb="Reports — exportable operational and financial reporting"><figcaption>Reports</figcaption></figure>
+      <figure class="thumb"><img src="assets/gaston/inventario.webp" alt="Inventory module" loading="lazy" data-lb="Inventory — stock derived from lots and movements, with valuation at real cost"><figcaption>Inventory</figcaption></figure>
+      <figure class="thumb"><img src="assets/gaston/dashboard-oscuro.webp" alt="Dashboard in dark mode" loading="lazy" data-lb="The full interface ships in light and dark themes"><figcaption>Dark theme</figcaption></figure>
+    </div>
+
+    <div class="stackrow rv">
+      <span class="chip">Laravel 13</span><span class="chip">PHP 8.4</span><span class="chip">React 19</span>
+      <span class="chip">TypeScript</span><span class="chip">Vite</span><span class="chip">Sanctum</span>
+      <span class="chip">ULID</span><span class="chip">Row-level locking</span><span class="chip">Idempotency</span>
+      <span class="chip">MariaDB</span><span class="chip">PHPUnit</span>
+    </div>
+    <div class="case-links rv">
+      <a class="lnk" href="https://gastonssweets.zentrixkg.com" target="_blank" rel="noopener">Visit the live platform <span class="arrow">→</span></a>
+    </div>
+  </article>
+
+  <!-- ---- 02 ZentrixKG ---- -->
+  <article class="case wrap">
+    <div class="case-head rv">
+      <div class="case-no">02</div>
+      <div>
+        <div class="tags">
+          <span class="tag live">● In production</span>
+          <span class="tag">Vue 3</span><span class="tag">PHP 8.4</span><span class="tag">76-table schema</span>
+        </div>
         <h3>ZentrixKG — Business ERP &amp; CRM Platform</h3>
-        <p>
-          A technology company was running sales, purchasing, inventory, service orders and warranties
-          across disconnected spreadsheets, with no single view of the business and no traceability of
-          who changed what. I designed and built a complete ERP/CRM from scratch: CRM and quoting,
-          purchasing and suppliers, inventory, expenses, service orders, technician management,
-          warranties, executive analytics and granular per-module permissions.
+        <p class="hook">
+          A technology company ran sales, purchasing, inventory, service orders and warranties across
+          disconnected spreadsheets — no single view of the business, and no record of who changed what.
         </p>
-        <div class="metrics">
-          <div><b>76</b><span>tables</span></div>
-          <div><b>35</b><span>migrations</span></div>
-          <div><b>13</b><span>views</span></div>
-        </div>
-        <div class="stack">
-          <span class="chip">Vue 3</span><span class="chip">TypeScript</span><span class="chip">Vite</span>
-          <span class="chip">PHP 8.4</span><span class="chip">REST API</span><span class="chip">MySQL / MariaDB</span>
-          <span class="chip">CI/CD</span>
-        </div>
-        <div class="flink"><a href="https://zentrixkg.com">Visit the live platform →</a></div>
-      </article>
+      </div>
+    </div>
 
-      <article class="fcard">
-        <span class="tag live">● Live on Google Play</span>
+    <div class="psr rv">
+      <div><h4>The problem</h4><p>Every department kept its own file. Quotes lived in one place, stock in another, service orders on paper. Nothing reconciled and nothing was auditable.</p></div>
+      <div><h4>What I built</h4><p>A complete ERP/CRM from scratch: CRM and quoting, purchasing, suppliers, inventory, expenses, service orders, technician management, warranties, analytics and per-module permissions.</p></div>
+      <div><h4>The result</h4><p>The full quote-to-warranty cycle in one auditable system, with CSRF protection, rate limiting, audit logging and automated deployment.</p></div>
+    </div>
+
+    <div class="kpis rv">
+      <div class="kpi"><b data-count="76">0</b><span>DATABASE TABLES</span></div>
+      <div class="kpi"><b data-count="35">0</b><span>VERSIONED MIGRATIONS</span></div>
+      <div class="kpi"><b data-count="13">0</b><span>SQL VIEWS</span></div>
+      <div class="kpi"><b>CI/CD</b><span>AUTOMATED DEPLOYMENT</span></div>
+    </div>
+
+    <figure class="frame rv" style="margin:0">
+      <div class="frame-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="frame-url">zentrixkg.com</span></div>
+      <img src="assets/zentrix/inicio.webp" alt="ZentrixKG corporate website home page" loading="lazy" data-lb="ZentrixKG — public site. The administrative panel behind it carries the full ERP.">
+    </figure>
+
+    <div class="thumbs rv">
+      <figure class="thumb"><img src="assets/zentrix/servicios.webp" alt="Services page" loading="lazy" data-lb="Services section"><figcaption>Services</figcaption></figure>
+      <figure class="thumb"><img src="assets/zentrix/soluciones.webp" alt="Solutions page" loading="lazy" data-lb="Solutions section"><figcaption>Solutions</figcaption></figure>
+      <figure class="thumb"><img src="assets/zentrix/nosotros.webp" alt="About page" loading="lazy" data-lb="About section"><figcaption>About</figcaption></figure>
+      <figure class="thumb"><img src="assets/zentrix/contacto.webp" alt="Contact page" loading="lazy" data-lb="Contact section"><figcaption>Contact</figcaption></figure>
+    </div>
+
+    <div class="stackrow rv">
+      <span class="chip">Vue 3</span><span class="chip">TypeScript</span><span class="chip">Vite</span>
+      <span class="chip">PHP 8.4</span><span class="chip">REST API</span><span class="chip">PDO</span>
+      <span class="chip">MariaDB / MySQL</span><span class="chip">CSRF + audit log</span><span class="chip">GitHub Actions</span>
+    </div>
+    <div class="case-links rv">
+      <a class="lnk" href="https://zentrixkg.com" target="_blank" rel="noopener">Visit the live site <span class="arrow">→</span></a>
+      <span class="note-priv">🔒 Admin panel is client-confidential — walkthrough available on request</span>
+    </div>
+  </article>
+
+  <!-- ---- 03 Mabel ---- -->
+  <article class="case wrap">
+    <div class="case-head rv">
+      <div class="case-no">03</div>
+      <div>
+        <div class="tags">
+          <span class="tag">Vanilla JS</span><span class="tag">Zero dependencies</span><span class="tag">~10k lines</span>
+        </div>
+        <h3>Descartables Mabel — Business Management Panel</h3>
+        <p class="hook">
+          A distributor needed a complete management panel that runs anywhere — no framework,
+          no build step, no server. So I built one in plain JavaScript, and it still does real analytics.
+        </p>
+      </div>
+    </div>
+
+    <div class="psr rv">
+      <div><h4>The problem</h4><p>Off-the-shelf systems needed servers, subscriptions and IT support the business did not have. Anything built had to run from a folder.</p></div>
+      <div><h4>What I built</h4><p>A modular single-page system: point of sale, sales, purchasing, inventory, clients, daily cash, reporting and an analytics dashboard — independent view modules over a dedicated state store.</p></div>
+      <div><h4>The result</h4><p>Zero external dependencies and zero build step, yet it surfaces churn risk, low-margin products, dead stock and overdue receivables automatically.</p></div>
+    </div>
+
+    <div class="kpis rv">
+      <div class="kpi"><b>S/ 336k</b><span>TRACKED IN 90-DAY DATASET</span></div>
+      <div class="kpi"><b data-count="2469">0</b><span>RECEIPTS PROCESSED</span></div>
+      <div class="kpi"><b data-count="16">0</b><span>JS MODULES</span></div>
+      <div class="kpi"><b data-count="0" data-suffix="">0</b><span>EXTERNAL DEPENDENCIES</span></div>
+    </div>
+
+    <figure class="frame rv" style="margin:0">
+      <div class="frame-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="frame-url">Descartables Mabel — Management dashboard</span></div>
+      <img src="assets/mabel/dashboard.webp" alt="Mabel management dashboard with sales and profit chart, attention feed and payment mix" loading="lazy" data-lb="Dashboard — 90-day sales and profit, an attention feed that names the actual problems, category mix and payment methods">
+    </figure>
+
+    <div class="thumbs rv">
+      <figure class="thumb"><img src="assets/mabel/pos.webp" alt="Point of sale screen" loading="lazy" data-lb="Point of sale — fast product entry, payment split and receipt generation"><figcaption>Point of sale</figcaption></figure>
+      <figure class="thumb"><img src="assets/mabel/reportes.webp" alt="Reports screen" loading="lazy" data-lb="Reports — period comparisons and exportable summaries"><figcaption>Reports</figcaption></figure>
+      <figure class="thumb"><img src="assets/mabel/inventario.webp" alt="Inventory screen" loading="lazy" data-lb="Inventory — reorder points driven by real rotation"><figcaption>Inventory</figcaption></figure>
+      <figure class="thumb"><img src="assets/mabel/clientes.webp" alt="Clients screen" loading="lazy" data-lb="Clients — purchase history, credit and churn signals"><figcaption>Clients</figcaption></figure>
+      <figure class="thumb"><img src="assets/mabel/caja.webp" alt="Cash control screen" loading="lazy" data-lb="Daily cash — opening, movements and blind count reconciliation"><figcaption>Daily cash</figcaption></figure>
+      <figure class="thumb"><img src="assets/mabel/compras.webp" alt="Purchases screen" loading="lazy" data-lb="Purchasing — supplier orders and goods receipt"><figcaption>Purchasing</figcaption></figure>
+    </div>
+
+    <div class="stackrow rv">
+      <span class="chip">JavaScript (ES6+)</span><span class="chip">Canvas charts</span><span class="chip">LocalStorage store</span>
+      <span class="chip">Modular architecture</span><span class="chip">Deterministic seeding</span><span class="chip">No build step</span>
+    </div>
+  </article>
+
+  <!-- ---- 04 Time Tracker ---- -->
+  <article class="case wrap">
+    <div class="case-head rv">
+      <div class="case-no">04</div>
+      <div>
+        <div class="tags">
+          <span class="tag store">▲ Live on Google Play</span>
+          <span class="tag">Flutter</span><span class="tag">25 releases</span>
+        </div>
         <h3>Time Tracker — Android App</h3>
-        <p>
-          A productivity app for logging and analyzing daily activities, published and maintained on
-          the Google Play Store across 25 production releases. Custom categories, star ratings, mood
-          and photo galleries; interactive donut, line and heatmap analytics; full JSON backup and
-          restore so the user owns their data; local notifications with timezone handling; five
-          languages. Monitored in production with Firebase Analytics and Crashlytics.
+        <p class="hook">
+          A published, monetised Android app with real users — designed, built, shipped and
+          maintained solo through 25 production releases.
         </p>
-        <div class="metrics">
-          <div><b>25</b><span>releases</span></div>
-          <div><b>5</b><span>languages</span></div>
-          <div><b>v1.5</b><span>current</span></div>
-        </div>
-        <div class="stack">
-          <span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Hive</span>
-          <span class="chip">fl_chart</span><span class="chip">Firebase</span><span class="chip">AdMob</span>
-        </div>
-        <div class="flink"><a href="https://play.google.com/store/apps/details?id=com.activitytracker.activity_tracker">View on Google Play →</a></div>
-      </article>
+      </div>
+    </div>
 
+    <div class="psr rv">
+      <div><h4>The problem</h4><p>Time-tracking apps either lock your history behind an account or bury the one thing that matters: what your week actually looked like.</p></div>
+      <div><h4>What I built</h4><p>Offline-first activity logging with categories, ratings, mood and photos; donut, trend and heatmap analytics; full JSON backup and restore; timezone-aware notifications; five languages.</p></div>
+      <div><h4>The result</h4><p>Shipped to the Play Store and maintained across 25 releases, monitored in production with Firebase Analytics and Crashlytics.</p></div>
+    </div>
+
+    <div class="phones rv">
+      <div class="phone"><img src="assets/timetracker/shot-1.webp" alt="Time Tracker activity log" loading="lazy" data-lb="Activity log — categories, ratings, mood and notes"></div>
+      <div class="phone"><img src="assets/timetracker/shot-3.webp" alt="Time Tracker statistics" loading="lazy" data-lb="Interactive statistics — distribution and monthly trend"></div>
+      <div class="phone"><img src="assets/timetracker/shot-4.webp" alt="Time Tracker heatmap" loading="lazy" data-lb="Heatmap — activity density over time"></div>
+      <div class="phone"><img src="assets/timetracker/shot-2.webp" alt="Time Tracker feature overview" loading="lazy" data-lb="Feature overview"></div>
+    </div>
+
+    <div class="stackrow rv">
+      <span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Hive</span>
+      <span class="chip">fl_chart</span><span class="chip">Firebase Analytics</span><span class="chip">Crashlytics</span>
+      <span class="chip">AdMob</span><span class="chip">5 languages</span>
+    </div>
+    <div class="case-links rv">
+      <a class="lnk" href="https://play.google.com/store/apps/details?id=com.activitytracker.activity_tracker" target="_blank" rel="noopener">View on Google Play <span class="arrow">→</span></a>
+      <span class="note-priv">🔒 Source private — it's a commercial product. Architecture walkthrough on request.</span>
+    </div>
+  </article>
+</section>
+
+<!-- ============ MORE WORK ============ -->
+<section id="more" class="sec-pad" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow rv">Automation &amp; data</span>
+    <h2 class="rv">Smaller tools that removed real hours.</h2>
+    <p class="sec-sub rv">Every card opens a working application — not a screenshot, not a video.</p>
+
+    <div class="pgrid">
+      <a class="pcard rv" href="https://enybyy.github.io/contract-automation-system/" target="_blank" rel="noopener">
+        <div class="pcard-img"><img src="assets/demos/contract-automation.webp" alt="Contract automation interface" loading="lazy"></div>
+        <div class="pcard-body">
+          <h4>Contract Automation</h4>
+          <p>Maps Word <code>.docx</code> templates against an Excel database and generates hundreds of contracts in one run, keeping the original formatting.</p>
+          <div class="impact">✦ Hours of copy-paste → one click, zero typos</div>
+          <div class="mini"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">Excel</span></div>
+        </div>
+      </a>
+
+      <a class="pcard rv" href="https://enybyy.github.io/pos-sales-management-system/" target="_blank" rel="noopener">
+        <div class="pcard-img"><img src="assets/demos/pos.webp" alt="POS and sales analytics" loading="lazy"></div>
+        <div class="pcard-body">
+          <h4>POS &amp; Sales Analytics</h4>
+          <p>Point of sale with a built-in BI dashboard for retail and food businesses. Runs from any phone at the counter, no subscription.</p>
+          <div class="impact">✦ Cash reconciliation: 45 min → 1 click</div>
+          <div class="mini"><span class="chip">JavaScript</span><span class="chip">Tailwind</span><span class="chip">Chart.js</span></div>
+        </div>
+      </a>
+
+      <a class="pcard rv" href="https://enybyy.github.io/attendance-tracker-pwa/" target="_blank" rel="noopener">
+        <div class="pcard-img"><img src="assets/demos/attendance.webp" alt="Attendance PWA" loading="lazy"></div>
+        <div class="pcard-body">
+          <h4>Attendance PWA</h4>
+          <p>Offline-first Progressive Web App. Installs on any phone, works with zero connectivity, exports payroll-ready Excel and PDF.</p>
+          <div class="impact">✦ Paper records → instant payroll exports</div>
+          <div class="mini"><span class="chip">PWA</span><span class="chip">Offline-first</span><span class="chip">Chart.js</span></div>
+        </div>
+      </a>
+
+      <a class="pcard rv" href="https://enybyy.github.io/web-scraping-selenium-pipeline/" target="_blank" rel="noopener">
+        <div class="pcard-img"><img src="assets/demos/selenium.webp" alt="Selenium data pipeline" loading="lazy"></div>
+        <div class="pcard-body">
+          <h4>Selenium Data Pipeline</h4>
+          <p>Unattended extraction and bulk reconciliation against an external portal, with retry handling and structured discrepancy reports.</p>
+          <div class="impact">✦ Days of manual lookups → scheduled job</div>
+          <div class="mini"><span class="chip">Python</span><span class="chip">Selenium</span><span class="chip">Pandas</span></div>
+        </div>
+      </a>
+
+      <a class="pcard rv" href="https://enybyy.github.io/business-automation-suite/" target="_blank" rel="noopener">
+        <div class="pcard-img"><img src="assets/demos/automation-suite.webp" alt="Business automation suite" loading="lazy"></div>
+        <div class="pcard-body">
+          <h4>Business Automation Suite</h4>
+          <p>Python/Flask tools for HR workflows, document processing and high-volume repetitive tasks — built so non-technical staff can run them.</p>
+          <div class="impact">✦ Recurring manual work runs unattended</div>
+          <div class="mini"><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Pandas</span></div>
+        </div>
+      </a>
+
+      <a class="pcard rv" href="https://enybyy.github.io/dni-identity-validator/" target="_blank" rel="noopener">
+        <div class="pcard-img"><img src="assets/demos/identity.webp" alt="Identity validator" loading="lazy"></div>
+        <div class="pcard-body">
+          <h4>Identity Validator</h4>
+          <p>Serverless identity-document validation with a CORS proxy and batch processing for onboarding and KYC workflows.</p>
+          <div class="impact">✦ Hundreds of records checked per pass</div>
+          <div class="mini"><span class="chip">Serverless</span><span class="chip">JavaScript</span><span class="chip">REST</span></div>
+        </div>
+      </a>
+
+      <a class="pcard rv" href="https://enybyy.github.io/statistical-data-analytics/" target="_blank" rel="noopener">
+        <div class="pcard-img"><img src="assets/demos/statistics.webp" alt="Statistical analytics" loading="lazy"></div>
+        <div class="pcard-body">
+          <h4>Statistical Analytics</h4>
+          <p>Applied statistics for decisions: A/B test design and significance testing, anomaly-based fraud detection, business intelligence.</p>
+          <div class="impact">✦ Analysis non-technical teams can act on</div>
+          <div class="mini"><span class="chip">Python</span><span class="chip">SciPy</span><span class="chip">SQL</span></div>
+        </div>
+      </a>
+
+      <a class="pcard rv" href="https://enybyy.github.io/data-science-machine-learning/" target="_blank" rel="noopener">
+        <div class="pcard-img"><img src="assets/demos/ml.webp" alt="Machine learning projects" loading="lazy"></div>
+        <div class="pcard-body">
+          <h4>Machine Learning</h4>
+          <p>Predictive models on real business problems — employee attrition for retention, multivariable prediction — with the reasoning made explicit.</p>
+          <div class="impact">✦ Models a business can act on</div>
+          <div class="mini"><span class="chip">scikit-learn</span><span class="chip">Pandas</span><span class="chip">Python</span></div>
+        </div>
+      </a>
     </div>
   </div>
 </section>
 
-<section id="demos" class="alt">
+<!-- ============ MOBILE ============ -->
+<section id="mobile" class="sec-pad" style="border-top:1px solid var(--line)">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>Live demos</h2>
-      <p>Click any card — each one opens a working application, not a screenshot.</p>
-    </div>
-    <div class="grid">
-
-      <a class="card" href="https://enybyy.github.io/contract-automation-system/">
-        <h3>Contract Automation</h3>
-        <p>Maps Word <code>.docx</code> templates against an Excel database and generates hundreds of contracts in one run, preserving original formatting.</p>
-        <div class="impact">Hours of copy-paste → one click, zero typos</div>
-        <div class="stack"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">Excel</span></div>
-      </a>
-
-      <a class="card" href="https://enybyy.github.io/pos-sales-management-system/">
-        <h3>POS &amp; Sales Analytics</h3>
-        <p>Point-of-sale with a built-in BI dashboard for retail and food businesses. Runs from any phone at the counter, no subscription.</p>
-        <div class="impact">Cash reconciliation: 45 min → 1 click</div>
-        <div class="stack"><span class="chip">JavaScript</span><span class="chip">Tailwind</span><span class="chip">Chart.js</span></div>
-      </a>
-
-      <a class="card" href="https://enybyy.github.io/business-automation-suite/">
-        <h3>Business Automation Suite</h3>
-        <p>Python/Flask tools for HR workflows, document processing and high-volume repetitive tasks — designed so non-technical staff can run them.</p>
-        <div class="impact">Recurring manual work runs unattended</div>
-        <div class="stack"><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Pandas</span></div>
-      </a>
-
-      <a class="card" href="https://enybyy.github.io/attendance-tracker-pwa/">
-        <h3>Attendance PWA</h3>
-        <p>Offline-first Progressive Web App for staff attendance. Installs on any phone, works with zero connectivity, exports to Excel and PDF.</p>
-        <div class="impact">Paper records → instant payroll exports</div>
-        <div class="stack"><span class="chip">PWA</span><span class="chip">Offline-first</span><span class="chip">Chart.js</span></div>
-      </a>
-
-      <a class="card" href="https://enybyy.github.io/web-scraping-selenium-pipeline/">
-        <h3>Selenium Data Pipeline</h3>
-        <p>Automated extraction and bulk reconciliation against an external portal, with retry handling and structured discrepancy reporting for audits.</p>
-        <div class="impact">Days of manual lookups → scheduled job</div>
-        <div class="stack"><span class="chip">Python</span><span class="chip">Selenium</span><span class="chip">Pandas</span></div>
-      </a>
-
-      <a class="card" href="https://enybyy.github.io/dni-identity-validator/">
-        <h3>Identity Validator</h3>
-        <p>Serverless identity-document validation with a CORS proxy and batch processing for onboarding and KYC workflows.</p>
-        <div class="impact">Hundreds of records checked per pass</div>
-        <div class="stack"><span class="chip">Serverless</span><span class="chip">JavaScript</span><span class="chip">REST</span></div>
-      </a>
-
-      <a class="card" href="https://enybyy.github.io/statistical-data-analytics/">
-        <h3>Statistical Analytics</h3>
-        <p>Applied statistics for decisions, not exercises: A/B test design and significance testing, anomaly-based fraud detection, business intelligence.</p>
-        <div class="impact">Analysis non-technical teams can act on</div>
-        <div class="stack"><span class="chip">Python</span><span class="chip">SciPy</span><span class="chip">SQL</span></div>
-      </a>
-
-      <a class="card" href="https://enybyy.github.io/data-science-machine-learning/">
-        <h3>Machine Learning</h3>
-        <p>Predictive models on real business problems — employee attrition for talent retention, multivariable prediction — with the reasoning made explicit.</p>
-        <div class="impact">Models a business can act on</div>
-        <div class="stack"><span class="chip">scikit-learn</span><span class="chip">Pandas</span><span class="chip">Python</span></div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<section id="mobile">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Mobile development</h2>
-      <p>Flutter apps built and shipped end to end — design, development and store release.</p>
-    </div>
-
-    <div class="appbar">
-      <img src="assets/timetracker/icon.webp" alt="Time Tracker app icon">
-      <div>
-        <h3>Time Tracker</h3>
-        <span>Flutter · Hive · Firebase · Live on Google Play</span>
-      </div>
-    </div>
-    <div class="shots">
-      <img src="assets/timetracker/shot-1.webp" alt="Time Tracker — activity log screen" loading="lazy">
-      <img src="assets/timetracker/shot-3.webp" alt="Time Tracker — interactive statistics" loading="lazy">
-      <img src="assets/timetracker/shot-4.webp" alt="Time Tracker — activity heatmap" loading="lazy">
-      <img src="assets/timetracker/shot-2.webp" alt="Time Tracker — feature overview" loading="lazy">
-    </div>
-
-    <div style="margin-top:38px" class="appbar">
-      <div>
-        <h3>Heavy Duty — Strength Training Tracker</h3>
-        <span>Flutter · Riverpod 3 · go_router · Drift (SQLite) · In development</span>
-      </div>
-    </div>
-    <p style="color:var(--fg-muted);font-size:.93rem;max-width:66ch">
-      A training companion for structured strength workouts: guided live sessions, progress analytics
-      and historical charts, personal profile and configuration, local backup/restore with media
-      attachments, notifications with timezone support, English and Spanish localization. Built on a
-      feature-first architecture with typed, migration-safe local persistence.
+    <span class="eyebrow rv">Mobile</span>
+    <h2 class="rv">Flutter apps, shipped to the store.</h2>
+    <p class="sec-sub rv">
+      Designed, built and released solo — including signing, store listing and post-launch monitoring.
     </p>
 
-    <div class="note">
-      Source code for both apps is kept private — they are commercial products. Happy to walk through
-      the architecture and code live on a screen share.
+    <div style="margin-top:44px" class="rv">
+      <div style="display:flex;align-items:center;gap:15px;margin-bottom:20px">
+        <img src="assets/timetracker/icon.webp" alt="" style="width:52px;height:52px;border-radius:13px;border:1px solid var(--line-2)">
+        <div>
+          <h3 style="margin:0;font-size:1.16rem;font-weight:700">Time Tracker</h3>
+          <span style="font-size:13px;color:var(--fg-3)">Flutter · Hive · Firebase · <b style="color:var(--lime)">Live on Google Play</b></span>
+        </div>
+      </div>
+      <div class="phones">
+        <div class="phone"><img src="assets/timetracker/shot-1.webp" alt="Time Tracker activity log" loading="lazy" data-lb="Time Tracker — activity log"></div>
+        <div class="phone"><img src="assets/timetracker/shot-3.webp" alt="Time Tracker statistics" loading="lazy" data-lb="Time Tracker — statistics"></div>
+        <div class="phone"><img src="assets/timetracker/shot-4.webp" alt="Time Tracker heatmap" loading="lazy" data-lb="Time Tracker — heatmap"></div>
+      </div>
+    </div>
+
+    <div style="margin-top:52px" class="rv">
+      <div style="margin-bottom:20px">
+        <h3 style="margin:0;font-size:1.16rem;font-weight:700">Heavy Duty — Strength Training Tracker</h3>
+        <span style="font-size:13px;color:var(--fg-3)">Flutter · Riverpod 3 · go_router · Drift (SQLite) · <b style="color:var(--fg-2)">In development</b></span>
+      </div>
+      <p style="color:var(--fg-2);max-width:66ch;font-size:.97rem;margin:0">
+        A training companion for structured strength workouts: guided live sessions with real-time tracking,
+        progress analytics and historical charts, personal profile and configuration, local backup and restore
+        with media attachments, timezone-aware notifications, and English/Spanish localization. Built on a
+        feature-first architecture with typed, migration-safe local persistence.
+      </p>
+    </div>
+
+    <div style="margin-top:38px" class="rv">
+      <h4 style="margin:0 0 14px;font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-3)">Responsive by default</h4>
+      <div class="phones">
+        <div class="phone"><img src="assets/gaston/movil-dashboard.webp" alt="Gastón's Sweets on mobile" loading="lazy" data-lb="Gastón's Sweets — the full ERP dashboard on a phone"></div>
+        <div class="phone"><img src="assets/mabel/movil-dashboard.webp" alt="Mabel panel on mobile" loading="lazy" data-lb="Descartables Mabel — management panel on a phone"></div>
+        <div class="phone"><img src="assets/zentrix/movil.webp" alt="ZentrixKG on mobile" loading="lazy" data-lb="ZentrixKG — corporate site on a phone"></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="certs" class="alt">
+<!-- ============ CERTS ============ -->
+<section id="certs" class="sec-pad" style="border-top:1px solid var(--line)">
   <div class="wrap">
-    <div class="sec-head"><h2>Certifications</h2></div>
+    <span class="eyebrow rv">Credentials</span>
+    <h2 class="rv">Certified where it counts.</h2>
     <div class="certs">
-      <div class="cert">Microsoft Office Specialist — Advanced Excel, Macros &amp; VBA</div>
-      <div class="cert">IBM Full Stack Software Developer</div>
-      <div class="cert">IBM Data Science Professional</div>
-      <div class="cert">Google Data Analytics Professional</div>
-      <div class="cert">PCAP — Certified Associate Python Programmer</div>
-      <div class="cert">Flutter &amp; Dart Development</div>
-      <div class="cert">Business Analytics</div>
+      <div class="cert rv"><span class="cert-ic">📊</span><span><b>Microsoft Office Specialist</b><span>Advanced Excel, Macros &amp; VBA</span></span></div>
+      <div class="cert rv"><span class="cert-ic">⚙️</span><span><b>IBM Full Stack Software Developer</b><span>Professional Certificate</span></span></div>
+      <div class="cert rv"><span class="cert-ic">🔬</span><span><b>IBM Data Science</b><span>Professional Certificate</span></span></div>
+      <div class="cert rv"><span class="cert-ic">📈</span><span><b>Google Data Analytics</b><span>Professional Certificate</span></span></div>
+      <div class="cert rv"><span class="cert-ic">🐍</span><span><b>PCAP</b><span>Certified Associate Python Programmer</span></span></div>
+      <div class="cert rv"><span class="cert-ic">📱</span><span><b>Flutter &amp; Dart Development</b><span>Mobile application development</span></span></div>
+      <div class="cert rv"><span class="cert-ic">💼</span><span><b>Business Analytics</b><span>Applied business intelligence</span></span></div>
+      <div class="cert rv"><span class="cert-ic">🎓</span><span><b>Engineer's Degree</b><span>UPC — Universidad Peruana de Ciencias Aplicadas</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="sec-pad" style="padding-top:20px">
+  <div class="wrap">
+    <div class="cta-box rv">
+      <span class="eyebrow" style="justify-content:center">Let's talk</span>
+      <h2>Which task is eating your team's week?</h2>
+      <p>
+        Tell me what it is and I'll tell you honestly whether it's worth automating —
+        and what it would take. I work in writing and keep everything documented:
+        clear scope, milestones you can verify, and a walkthrough on delivery.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-1" href="https://www.upwork.com/freelancers/~01471ca462b236e8e5" target="_blank" rel="noopener">Hire me on Upwork →</a>
+        <a class="btn btn-2" href="https://www.linkedin.com/in/eliud-rojas-mendoza-414652212/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap foot">
-    <p>Eliud RM · Lima, Peru (UTC−05:00) · Working in English and Spanish</p>
-    <div class="flinks">
-      <a href="https://www.upwork.com/freelancers/~01471ca462b236e8e5">Upwork</a>
-      <a href="https://github.com/Enybyy">GitHub</a>
-      <a href="https://www.linkedin.com/in/eliud-rojas-mendoza-414652212/">LinkedIn</a>
-    </div>
+    <p>© <span id="yr"></span> Eliud RM · Lima, Peru (UTC−05:00) · Working in English &amp; Spanish</p>
+    <nav>
+      <a href="https://www.upwork.com/freelancers/~01471ca462b236e8e5" target="_blank" rel="noopener">Upwork</a>
+      <a href="https://github.com/Enybyy" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/eliud-rojas-mendoza-414652212/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
   </div>
 </footer>
 
+<div id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="x" aria-label="Close">✕</button>
+  <button class="nav-b prev" aria-label="Previous">‹</button>
+  <button class="nav-b next" aria-label="Next">›</button>
+  <img src="" alt="">
+  <div class="cap"></div>
+</div>
+
+<script src="assets/app.js" defer></script>
 </body>
 </html>
