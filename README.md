@@ -1,89 +1,62 @@
-<div align="center">
+# Eliud Rojas Mendoza · Developer portfolio
 
-# Eliud Rojas Mendoza
+[Visit the portfolio](https://enybyy.github.io/) · [Upwork](https://www.upwork.com/freelancers/~01471ca462b236e8e5) · [GitHub](https://github.com/Enybyy)
 
-A portfolio of business systems, automation tools and mobile applications, with project views and access to interactive demos.
+A portfolio of business systems, automation tools and mobile applications, built around authentic interfaces and clear project scope.
 
-<a href="https://enybyy.github.io/"><img src="docs/media/demo.svg" width="360" alt="View portfolio"></a>
+![Portfolio desktop preview](docs/portfolio-desktop.jpg)
 
-<p><a href="https://github.com/Enybyy"><img src="docs/media/github.svg" width="112" alt="Eliud Rojas Mendoza on GitHub"></a>
-<a href="https://www.linkedin.com/in/eliud-rojas-mendoza-414652212/"><img src="docs/media/linkedin.svg" width="112" alt="Eliud Rojas Mendoza on LinkedIn"></a>
-<a href="https://www.upwork.com/freelancers/~01471ca462b236e8e5"><img src="docs/media/upwork.svg" width="112" alt="Eliud Rojas Mendoza on Upwork"></a></p>
+## Explore the work
 
-[![Eliud Rojas Mendoza in use](assets/screenshots/portfolio-desktop.png)](https://enybyy.github.io/)
+- **15 projects**, organized by business systems, automation and data, mobile apps, and web experiences.
+- **54 images from the 13 Upwork portfolio entries**, plus two images of the historical contract prototype. All are available in project galleries.
+- Three selected case studies: ZentrixKG, Gastón’s Sweets, and Nexo Commerce.
+- A published Android app, Time Tracker, and Heavy Duty clearly marked as in development.
+- Eight browser demos, including a local Hotkey Workbench preview.
+- Project search, category filters, keyboard gallery controls, and responsive navigation.
+- Entrance animations, ambient gradients, gallery transitions, and hover effects. Reduced-motion preferences are respected.
 
-*Actual portfolio website screenshot.*
+## Scope and sources
 
-[About](#about-the-project) · [Workflow](#everyday-workflow) · [Technology](#built-with) · [Run locally](#local-use)
+Descriptions were reconciled with the available GitHub READMEs and Upwork portfolio entries. Published products, interactive demonstrations, historical prototypes and development work keep their own status.
 
-</div>
+MolleVentas is described as shift sales tracking and revenue charts; it does not claim unsupported stock, purchasing or expense modules. Contract Automation System is the historical upload prototype that led to Generar RH. The Hotkey Workbench browser preview visualizes a sequence and does not send input to other applications.
 
+Images are optimized WebP copies of authentic project captures. Long images retain their full proportions in the detailed gallery; covers use a crop. Each image can also be opened separately.
 
-## About the project
+## Browser demos
 
-Business systems, automation tools and mobile applications each have a different workflow. This website brings them together through interface screenshots and demo links, allowing visitors to explore each case through the product and then its documentation.
-
-The gallery connects the tools to everyday tasks: preparing documents, reviewing lists, recording shifts, tracking attendance and turning pages into data. Public repositories provide setup instructions and scope; private projects are presented through their views and descriptions.
-
-## Everyday workflow
-
-| Inside the portfolio | Detail |
-| --- | --- |
-| Business applications | Views of management systems, commerce and mobile applications. |
-| Working tools | Seven public demos covering documents, records, attendance and data. |
-| Project material | Authentic interface screenshots and links to available source code. |
-| Navigation | Responsive layout and navigation between portfolio sections. |
-
-## Screenshots
-
-### Portfolio tools and demos
-
-![Portfolio tools and demos](assets/screenshots/portfolio-demos.png)
-
-## Projects with demos
-
-| Project | Repository | Demo |
+| Project | Demo | Source |
 | --- | --- | --- |
-| DNI Studio | [Source](https://github.com/Enybyy/dni-identity-validator) | [Open](https://enybyy.github.io/dni-identity-validator/) |
-| Keyboard Event Lab | [Source](https://github.com/Enybyy/keyboard-event-lab) | [Open](https://enybyy.github.io/keyboard-event-lab/) |
-| MolleVentas | [Source](https://github.com/Enybyy/pos-sales-management-system) | [Open](https://enybyy.github.io/pos-sales-management-system/) |
-| Enybyy Extract | [Source](https://github.com/Enybyy/web-scraping-selenium-pipeline) | [Open](https://enybyy.github.io/web-scraping-selenium-pipeline/) |
-| Generar RH | [Source](https://github.com/Enybyy/rh-document-generator) | [Open](https://enybyy.github.io/rh-document-generator/) |
-| Bulk Video | [Source](https://github.com/Enybyy/descargar-videos-bulk) | [Open](https://enybyy.github.io/descargar-videos-bulk/) |
-| Attendance Tracker PWA | [Source](https://github.com/Enybyy/attendance-tracker-pwa) | [Open](https://enybyy.github.io/attendance-tracker-pwa/) |
+| Attendance Tracker | [Open](https://enybyy.github.io/attendance-tracker-pwa/) | [Repository](https://github.com/Enybyy/attendance-tracker-pwa) |
+| Generar RH | [Open](https://enybyy.github.io/rh-document-generator/) | [Repository](https://github.com/Enybyy/rh-document-generator) |
+| Enybyy Extract | [Open](https://enybyy.github.io/web-scraping-selenium-pipeline/) | [Repository](https://github.com/Enybyy/web-scraping-selenium-pipeline) |
+| MolleVentas | [Open](https://enybyy.github.io/pos-sales-management-system/) | [Repository](https://github.com/Enybyy/pos-sales-management-system) |
+| DNI Studio | [Open](https://enybyy.github.io/dni-identity-validator/) | [Repository](https://github.com/Enybyy/dni-identity-validator) |
+| Bulk Video | [Open](https://enybyy.github.io/descargar-videos-bulk/) | [Repository](https://github.com/Enybyy/descargar-videos-bulk) |
+| Keyboard Event Lab | [Open](https://enybyy.github.io/keyboard-event-lab/) | [Repository](https://github.com/Enybyy/keyboard-event-lab) |
+| Hotkey Workbench | [Preview](https://enybyy.github.io/demos/hotkey/) | [Repository](https://github.com/Enybyy/hotkey-workbench) |
 
-## Built with
+Public browser demos may illustrate a workflow without running the full desktop or server application. Their own scope notes explain the distinction.
 
-| Area | Technology |
-| --- | --- |
-| Website | HTML, CSS and JavaScript |
-| Hosting | GitHub Pages |
-| Visual material | Actual project screenshots |
-| Website typography | Inter |
+## Run locally
 
-## Local use
+The site is static HTML, CSS and JavaScript. No build step or server-side configuration is required.
 
-<details>
-<summary><strong>Run on your computer</strong></summary>
-
-The website consists of static files. From the repository folder:
-
-```bash
-python -m http.server 5087 --bind 127.0.0.1
+```sh
+python -m http.server 5094
 ```
 
-Open http://127.0.0.1:5087. The root contains `index.html`; `assets/` contains styles, scripts and images. GitHub Pages publishes the website from the main branch.
+Open http://localhost:5094/.
 
-</details>
+## Maintain the collection
 
----
+- `index.html` contains the readable page, cards, featured cases and navigation.
+- `assets/projects.json` contains project details, links and complete ordered image lists.
+- `assets/projects-data.js` exposes the same array as `window.PORTFOLIO_PROJECTS` for the static page.
+- `assets/app.js` manages search, filtering, accessible dialogs, gallery controls and transitions.
+- `assets/style.css` preserves the original visual identity; `assets/portfolio.css` defines the new layouts.
+- `assets/projects/<project>/` contains optimized gallery images.
+- `demos/hotkey/` contains the standalone sequence preview.
 
-<div align="center">
-
-**Eliud Rojas Mendoza · Enybyy**
-
-<p><a href="https://github.com/Enybyy"><img src="docs/media/github.svg" width="112" alt="Eliud Rojas Mendoza on GitHub"></a>
-<a href="https://www.linkedin.com/in/eliud-rojas-mendoza-414652212/"><img src="docs/media/linkedin.svg" width="112" alt="Eliud Rojas Mendoza on LinkedIn"></a>
-<a href="https://www.upwork.com/freelancers/~01471ca462b236e8e5"><img src="docs/media/upwork.svg" width="112" alt="Eliud Rojas Mendoza on Upwork"></a></p>
-
-</div>
+When changing project data, keep the JSON, static JavaScript array and visible cards consistent. GitHub Pages publishes from the existing repository configuration.
