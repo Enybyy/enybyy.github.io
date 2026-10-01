@@ -2,75 +2,76 @@
 
 # Eliud Rojas Mendoza
 
-Portafolio de sistemas de gestión, automatización y aplicaciones móviles, con vistas de los proyectos y acceso a sus demos.
+A portfolio of business systems, automation tools and mobile applications, with project views and access to interactive demos.
 
-<a href="https://enybyy.github.io/"><img src="docs/media/demo.svg" width="360" alt="Ver portafolio"></a>
+<a href="https://enybyy.github.io/"><img src="docs/media/demo.svg" width="360" alt="View portfolio"></a>
 
-<p><a href="https://github.com/Enybyy"><img src="docs/media/github.svg" width="112" alt="GitHub de Eliud Rojas Mendoza"></a>
-<a href="https://www.linkedin.com/in/eliud-rojas-mendoza-414652212/"><img src="docs/media/linkedin.svg" width="112" alt="LinkedIn de Eliud Rojas Mendoza"></a>
-<a href="https://www.upwork.com/freelancers/~01471ca462b236e8e5"><img src="docs/media/upwork.svg" width="112" alt="Upwork de Eliud Rojas Mendoza"></a></p>
+<p><a href="https://github.com/Enybyy"><img src="docs/media/github.svg" width="112" alt="Eliud Rojas Mendoza on GitHub"></a>
+<a href="https://www.linkedin.com/in/eliud-rojas-mendoza-414652212/"><img src="docs/media/linkedin.svg" width="112" alt="Eliud Rojas Mendoza on LinkedIn"></a>
+<a href="https://www.upwork.com/freelancers/~01471ca462b236e8e5"><img src="docs/media/upwork.svg" width="112" alt="Eliud Rojas Mendoza on Upwork"></a></p>
 
-[![Eliud Rojas Mendoza en uso](assets/screenshots/portfolio-desktop.png)](https://enybyy.github.io/)
+[![Eliud Rojas Mendoza in use](assets/screenshots/portfolio-desktop.png)](https://enybyy.github.io/)
 
-*Vista real del sitio del portafolio.*
+*Actual portfolio website screenshot.*
 
-[Acerca del proyecto](#acerca-del-proyecto) · [Capturas](#capturas) · [Recorrido](#en-el-día-a-día) · [Tecnología](#cómo-está-construido) · [Uso local](#uso-local)
+[About](#about-the-project) · [Workflow](#everyday-workflow) · [Technology](#built-with) · [Run locally](#local-use)
 
 </div>
 
-## Acerca del proyecto
 
-Los proyectos de gestión, automatización y aplicaciones móviles tienen recorridos distintos. Este sitio los reúne con imágenes de sus interfaces y enlaces a las demos, para que cada caso se pueda explorar desde el producto y luego desde su documentación.
+## About the project
 
-La galería conecta las herramientas con sus tareas habituales: preparar documentos, revisar listas, registrar turnos, controlar asistencia y convertir páginas en datos. Los repositorios públicos amplían el contexto con instrucciones y alcance; los casos privados se presentan mediante sus vistas y descripción.
+Business systems, automation tools and mobile applications each have a different workflow. This website brings them together through interface screenshots and demo links, allowing visitors to explore each case through the product and then its documentation.
 
-## En el día a día
+The gallery connects the tools to everyday tasks: preparing documents, reviewing lists, recording shifts, tracking attendance and turning pages into data. Public repositories provide setup instructions and scope; private projects are presented through their views and descriptions.
 
-| Dentro del proyecto | Detalle |
+## Everyday workflow
+
+| Inside the portfolio | Detail |
 | --- | --- |
-| Casos de gestión | Vistas de sistemas empresariales, comercio y aplicaciones móviles. |
-| Herramientas de trabajo | Seis demos públicas de documentos, registros, asistencia y datos. |
-| Material de cada caso | Capturas de las interfaces y enlaces al código disponible. |
-| Acceso desde móvil | Diseño adaptable y navegación entre las secciones del portafolio. |
+| Business applications | Views of management systems, commerce and mobile applications. |
+| Working tools | Six public demos covering documents, records, attendance and data. |
+| Project material | Authentic interface screenshots and links to available source code. |
+| Navigation | Responsive layout and navigation between portfolio sections. |
 
-## Capturas
+## Screenshots
 
-### Herramientas y demos del portafolio
+### Portfolio tools and demos
 
-![Herramientas y demos del portafolio](assets/screenshots/portfolio-demos.png)
+![Portfolio tools and demos](assets/screenshots/portfolio-demos.png)
 
-## Proyectos con demo
+## Projects with demos
 
-| Proyecto | Repositorio | Demo |
+| Project | Repository | Demo |
 | --- | --- | --- |
-| DNI Studio | [Código](https://github.com/Enybyy/dni-identity-validator) | [Abrir](https://enybyy.github.io/dni-identity-validator/) |
-| Keyboard Event Lab | [Código](https://github.com/Enybyy/keyboard-event-lab) | [Abrir](https://enybyy.github.io/keyboard-event-lab/) |
-| MolleVentas | [Código](https://github.com/Enybyy/pos-sales-management-system) | [Abrir](https://enybyy.github.io/pos-sales-management-system/) |
-| Enybyy Extract | [Código](https://github.com/Enybyy/web-scraping-selenium-pipeline) | [Abrir](https://enybyy.github.io/web-scraping-selenium-pipeline/) |
-| Generar RH | [Código](https://github.com/Enybyy/rh-document-generator) | [Abrir](https://enybyy.github.io/rh-document-generator/) |
-| Attendance Tracker PWA | [Código](https://github.com/Enybyy/attendance-tracker-pwa) | [Abrir](https://enybyy.github.io/attendance-tracker-pwa/) |
+| DNI Studio | [Source](https://github.com/Enybyy/dni-identity-validator) | [Open](https://enybyy.github.io/dni-identity-validator/) |
+| Keyboard Event Lab | [Source](https://github.com/Enybyy/keyboard-event-lab) | [Open](https://enybyy.github.io/keyboard-event-lab/) |
+| MolleVentas | [Source](https://github.com/Enybyy/pos-sales-management-system) | [Open](https://enybyy.github.io/pos-sales-management-system/) |
+| Enybyy Extract | [Source](https://github.com/Enybyy/web-scraping-selenium-pipeline) | [Open](https://enybyy.github.io/web-scraping-selenium-pipeline/) |
+| Generar RH | [Source](https://github.com/Enybyy/rh-document-generator) | [Open](https://enybyy.github.io/rh-document-generator/) |
+| Attendance Tracker PWA | [Source](https://github.com/Enybyy/attendance-tracker-pwa) | [Open](https://enybyy.github.io/attendance-tracker-pwa/) |
 
-## Cómo está construido
+## Built with
 
-| Área | Tecnología |
+| Area | Technology |
 | --- | --- |
-| Sitio | HTML, CSS y JavaScript |
-| Publicación | GitHub Pages |
-| Material visual | Capturas de los proyectos |
-| Tipografía del sitio | Inter |
+| Website | HTML, CSS and JavaScript |
+| Hosting | GitHub Pages |
+| Visual material | Actual project screenshots |
+| Website typography | Inter |
 
-## Uso local
+## Local use
 
 <details>
-<summary><strong>Ejecutar en tu equipo</strong></summary>
+<summary><strong>Run on your computer</strong></summary>
 
-El sitio se sirve como archivos estáticos. Desde la carpeta del repositorio:
+The website consists of static files. From the repository folder:
 
 ```bash
 python -m http.server 5087 --bind 127.0.0.1
 ```
 
-Abre http://127.0.0.1:5087. La raíz contiene `index.html`; `assets/` reúne estilos, scripts e imágenes. GitHub Pages publica el sitio desde la rama principal.
+Open http://127.0.0.1:5087. The root contains `index.html`; `assets/` contains styles, scripts and images. GitHub Pages publishes the website from the main branch.
 
 </details>
 
@@ -80,8 +81,8 @@ Abre http://127.0.0.1:5087. La raíz contiene `index.html`; `assets/` reúne est
 
 **Eliud Rojas Mendoza · Enybyy**
 
-<p><a href="https://github.com/Enybyy"><img src="docs/media/github.svg" width="112" alt="GitHub de Eliud Rojas Mendoza"></a>
-<a href="https://www.linkedin.com/in/eliud-rojas-mendoza-414652212/"><img src="docs/media/linkedin.svg" width="112" alt="LinkedIn de Eliud Rojas Mendoza"></a>
-<a href="https://www.upwork.com/freelancers/~01471ca462b236e8e5"><img src="docs/media/upwork.svg" width="112" alt="Upwork de Eliud Rojas Mendoza"></a></p>
+<p><a href="https://github.com/Enybyy"><img src="docs/media/github.svg" width="112" alt="Eliud Rojas Mendoza on GitHub"></a>
+<a href="https://www.linkedin.com/in/eliud-rojas-mendoza-414652212/"><img src="docs/media/linkedin.svg" width="112" alt="Eliud Rojas Mendoza on LinkedIn"></a>
+<a href="https://www.upwork.com/freelancers/~01471ca462b236e8e5"><img src="docs/media/upwork.svg" width="112" alt="Eliud Rojas Mendoza on Upwork"></a></p>
 
 </div>
