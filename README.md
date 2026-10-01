@@ -30,7 +30,7 @@ The gallery connects the tools to everyday tasks: preparing documents, reviewing
 | Inside the portfolio | Detail |
 | --- | --- |
 | Business applications | Views of management systems, commerce and mobile applications. |
-| Working tools | Six public demos covering documents, records, attendance and data. |
+| Working tools | Seven public demos covering documents, records, attendance and data. |
 | Project material | Authentic interface screenshots and links to available source code. |
 | Navigation | Responsive layout and navigation between portfolio sections. |
 
@@ -49,6 +49,7 @@ The gallery connects the tools to everyday tasks: preparing documents, reviewing
 | MolleVentas | [Source](https://github.com/Enybyy/pos-sales-management-system) | [Open](https://enybyy.github.io/pos-sales-management-system/) |
 | Enybyy Extract | [Source](https://github.com/Enybyy/web-scraping-selenium-pipeline) | [Open](https://enybyy.github.io/web-scraping-selenium-pipeline/) |
 | Generar RH | [Source](https://github.com/Enybyy/rh-document-generator) | [Open](https://enybyy.github.io/rh-document-generator/) |
+| Bulk Video | [Source](https://github.com/Enybyy/descargar-videos-bulk) | [Open](https://enybyy.github.io/descargar-videos-bulk/) |
 | Attendance Tracker PWA | [Source](https://github.com/Enybyy/attendance-tracker-pwa) | [Open](https://enybyy.github.io/attendance-tracker-pwa/) |
 
 ## Built with
