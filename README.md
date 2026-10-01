@@ -14,39 +14,30 @@ Portafolio de sistemas de gestión, automatización y aplicaciones móviles, con
 
 *Vista real del sitio del portafolio.*
 
-[Acerca del proyecto](#acerca-del-proyecto) · [Capturas](#capturas) · [Uso e instalación](#uso-e-instalación)
+[Acerca del proyecto](#acerca-del-proyecto) · [Capturas](#capturas) · [Recorrido](#en-el-día-a-día) · [Tecnología](#cómo-está-construido) · [Uso local](#uso-local)
 
 </div>
 
 ## Acerca del proyecto
 
-Este sitio reúne proyectos de distintas escalas: aplicaciones de gestión, herramientas para trabajar con documentos y datos, y productos móviles. Cada caso combina una descripción de su recorrido con imágenes de la interfaz y enlaces para explorarlo.
+Los proyectos de gestión, automatización y aplicaciones móviles tienen recorridos distintos. Este sitio los reúne con imágenes de sus interfaces y enlaces a las demos, para que cada caso se pueda explorar desde el producto y luego desde su documentación.
 
-Los repositorios públicos amplían el contexto con instrucciones de uso y límites de cada demo. Los casos con código privado se presentan desde el sitio, sin publicar sus fuentes en este repositorio.
+La galería conecta las herramientas con sus tareas habituales: preparar documentos, revisar listas, registrar turnos, controlar asistencia y convertir páginas en datos. Los repositorios públicos amplían el contexto con instrucciones y alcance; los casos privados se presentan mediante sus vistas y descripción.
+
+## En el día a día
+
+| Dentro del proyecto | Detalle |
+| --- | --- |
+| Casos de gestión | Vistas de sistemas empresariales, comercio y aplicaciones móviles. |
+| Herramientas de trabajo | Seis demos públicas de documentos, registros, asistencia y datos. |
+| Material de cada caso | Capturas de las interfaces y enlaces al código disponible. |
+| Acceso desde móvil | Diseño adaptable y navegación entre las secciones del portafolio. |
 
 ## Capturas
 
-<details>
-<summary><strong>Herramientas y demos del portafolio</strong></summary>
+### Herramientas y demos del portafolio
 
 ![Herramientas y demos del portafolio](assets/screenshots/portfolio-demos.png)
-
-</details>
-
-## Uso e instalación
-
-<details>
-<summary><strong>Ver el recorrido, las instrucciones y las notas técnicas</strong></summary>
-
-## Ejecutar localmente
-
-El sitio se sirve como archivos estáticos. Desde la carpeta del repositorio:
-
-```bash
-python -m http.server 5087 --bind 127.0.0.1
-```
-
-Abre http://127.0.0.1:5087. La raíz contiene `index.html`; `assets/` reúne estilos, scripts e imágenes. GitHub Pages publica el sitio desde la rama principal.
 
 ## Proyectos con demo
 
@@ -58,6 +49,28 @@ Abre http://127.0.0.1:5087. La raíz contiene `index.html`; `assets/` reúne est
 | Enybyy Extract | [Código](https://github.com/Enybyy/web-scraping-selenium-pipeline) | [Abrir](https://enybyy.github.io/web-scraping-selenium-pipeline/) |
 | Generar RH | [Código](https://github.com/Enybyy/rh-document-generator) | [Abrir](https://enybyy.github.io/rh-document-generator/) |
 | Attendance Tracker PWA | [Código](https://github.com/Enybyy/attendance-tracker-pwa) | [Abrir](https://enybyy.github.io/attendance-tracker-pwa/) |
+
+## Cómo está construido
+
+| Área | Tecnología |
+| --- | --- |
+| Sitio | HTML, CSS y JavaScript |
+| Publicación | GitHub Pages |
+| Material visual | Capturas de los proyectos |
+| Tipografía del sitio | Inter |
+
+## Uso local
+
+<details>
+<summary><strong>Ejecutar en tu equipo</strong></summary>
+
+El sitio se sirve como archivos estáticos. Desde la carpeta del repositorio:
+
+```bash
+python -m http.server 5087 --bind 127.0.0.1
+```
+
+Abre http://127.0.0.1:5087. La raíz contiene `index.html`; `assets/` reúne estilos, scripts e imágenes. GitHub Pages publica el sitio desde la rama principal.
 
 </details>
 
