@@ -22,7 +22,7 @@ Descriptions were reconciled with the available GitHub READMEs and Upwork portfo
 
 MolleVentas is described as shift sales tracking and revenue charts; it does not claim unsupported stock, purchasing or expense modules. Contract Automation System is the historical upload prototype that led to Generar RH. The Hotkey Workbench browser preview visualizes a sequence and does not send input to other applications.
 
-Images are optimized WebP copies of authentic project captures. Long images retain their full proportions in the detailed gallery; covers use a crop. Each image can also be opened separately.
+Images are optimized WebP copies of authentic project captures. Featured screenshots retain their original proportions, and previews fit completely inside their frames without cropping or stretching. Each image can also be opened separately.
 
 ## Browser demos
 
