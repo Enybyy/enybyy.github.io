@@ -5,6 +5,8 @@ A Python research workflow that turns public organization listings into a search
 <div align="center">
 <a href="https://enybyy.github.io/business-directory/"><img src="assets/open-directory.svg" width="420" alt="Open the live directory"></a>
 
+<a href="https://github.com/Enybyy/enybyy.github.io/tree/main/business-directory"><img src="assets/github.svg" width="128" alt="GitHub source"></a> <a href="https://www.upwork.com/freelancers/eliudevelopment?p=2106929528974303232"><img src="assets/upwork.svg" width="128" alt="Upwork project"></a>
+
 [Excel database](outputs/Business_Directory.xlsx) · [CSV records](Business_Directory.csv) · [Upwork project](https://www.upwork.com/freelancers/eliudevelopment?p=2106929528974303232)
 </div>
 
@@ -76,3 +78,4 @@ Organization logos remain the property of their respective owners. This independ
 **Eliud Rojas Mendoza · Enybyy**
 
 [GitHub](https://github.com/Enybyy) · [Upwork](https://www.upwork.com/freelancers/eliudevelopment)
+
