@@ -8,11 +8,11 @@ A portfolio of business systems, automation tools and mobile applications, built
 
 ## Explore the work
 
-- **15 projects**, organized by business systems, automation and data, mobile apps, and web experiences.
+- **17 projects**, organized by business systems, automation and data, mobile apps, and web experiences.
 - **54 images from the 13 Upwork portfolio entries**, plus two images of the historical contract prototype. All are available in project galleries.
 - Three selected case studies: ZentrixKG, Gastón’s Sweets, and Nexo Commerce.
 - A published Android app, Time Tracker, and Heavy Duty clearly marked as in development.
-- Eight browser demos, including a local Hotkey Workbench preview.
+- Ten browser demos, including a local Hotkey Workbench preview.
 - Project search, category filters, keyboard gallery controls, and responsive navigation.
 - Entrance animations, ambient gradients, gallery transitions, and hover effects. Reduced-motion preferences are respected.
 
@@ -60,3 +60,14 @@ Open http://localhost:5094/.
 - `demos/hotkey/` contains the standalone sequence preview.
 
 When changing project data, keep the JSON, static JavaScript array and visible cards consistent. GitHub Pages publishes from the existing repository configuration.
+
+## R analytical studies
+
+Two reproducible public-data studies complement the application portfolio. Each includes a white interactive explorer, ten R figures, a complete methodological report, source checksums, locked packages, analytical checks and reviewed PDF, Word and Excel deliverables.
+
+| Study | Scope | Explorer | Source |
+| --- | --- | --- | --- |
+| Retail Insights | 541,909 invoice lines; sales integrity, credits, RFM and cohorts | [Open](https://enybyy.github.io/retail-insights/) | [Repository](https://github.com/Enybyy/retail-insights) |
+| Urban Demand | 17,379 hourly observations; rental patterns and temporal model evaluation | [Open](https://enybyy.github.io/urban-demand/) | [Repository](https://github.com/Enybyy/urban-demand) |
+
+These are historical public-data portfolio studies. The pages distinguish observed patterns, evaluated model performance and hypothetical operational benefits.
